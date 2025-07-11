@@ -1,15 +1,24 @@
-# 📅 Day 2 – Variables, Data Types & Scanner Input
+# Day 02 - Escape Sequences & Constructor
 
-## ✅ Topics Covered
+## File: `p2.java`
 
-- Primitive Data Types in Java (`int`, `float`, `char`, `boolean`)
-- Declaring and Initializing Variables
-- Using `Scanner` for user input
-- Printing and concatenation
+### ✅ Description:
+Demonstrates:
+- Java constructor usage
+- Escape sequences like `\n`, `\t`, `\a`, `\b`, `\r`, etc.
 
-## 📄 Code: VariablesDemo.java
-
-```java
-Scanner scanner = new Scanner(System.in);
-// Input and variable examples here
+### 💻 Output:
 ```
+A
+
+B
+
+C
+
+
+	
+" welcome"
+```
+
+### ⚠️ Note:
+Not all escape sequences like `\a`, `\z` are valid or functional in Java. This is used for demonstration.
