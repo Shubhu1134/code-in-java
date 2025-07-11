@@ -1,17 +1,10 @@
-# 📅 Day 3 – Operators & Type Casting in Java
+# Day 03 - Loops or Patterns
 
-## ✅ Topics Covered
+## File: `p3.java`
 
-- Arithmetic, Relational, Logical, Assignment Operators
-- Unary & Ternary
-- Type Casting (Widening & Narrowing)
+### ✅ Description:
+Demonstrates Java loops / pattern printing (specify if it's `for`, `while`, or pattern-based code).
 
-## 📄 Code: OperatorsDemo.java
-
-Includes:
-
-- User input
-- Various operator demonstrations
-- Type conversion examples
-
-## 💡 Sample Output
+### 🔧 Concepts:
+- Loops
+- Print formatting

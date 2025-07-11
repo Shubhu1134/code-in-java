@@ -1,19 +1,16 @@
-# 📅 Day 1 - Java Setup and Hello World
+# Day 01 - Basic Java Program
 
-## ✅ Topics Covered
+## File: `p1.java`
 
-- Java Installation (JDK)
-- JVM vs JDK vs JRE
-- Basic Java Program Structure
-- How to compile and run Java code
-- Using single-line (`//`) and multi-line (`/* */`) comments
+### ✅ Description:
+This program prints a basic "Hello World" message using the `main` method and standard output.
 
-## 📄 Code: HelloWorld.java
-
-```java
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
+### 💻 Output:
 ```
+Hello World
+```
+
+### 🔧 Concepts:
+- Java syntax
+- `System.out.println()`
+- Main method structure
