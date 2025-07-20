@@ -1,17 +1,20 @@
-// Q.38: Find HCF of two numbers
+// 38) WAP to check whether entered number is Armstrong or not
+
 import java.util.Scanner;
 class Test {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter two numbers:");
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int hcf = 1;
-        for(int i = 1; i <= a && i <= b; i++) {
-            if(a % i == 0 && b % i == 0) {
-                hcf = i;
-            }
+        System.out.println("Enter number:");
+        int num = sc.nextInt();
+        int temp = num, sum = 0;
+        while (num != 0) {
+            int d = num % 10;
+            sum += d * d * d;
+            num = num / 10;
         }
-        System.out.println("HCF = " + hcf);
+        if (sum == temp)
+            System.out.println("Armstrong number");
+        else
+            System.out.println("Not Armstrong");
     }
 }

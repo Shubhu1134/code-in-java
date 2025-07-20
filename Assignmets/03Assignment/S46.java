@@ -1,16 +1,18 @@
-// Q46: Print the sum of digits of a number.
+// Q46: WAP to find out the sum of first and last digit of a user entered number 
 import java.util.Scanner;
 class Test {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number: ");
-        int n = sc.nextInt();
-        int sum = 0;
-        while (n > 0) {
-            int digit = n % 10;
-            sum += digit;
-            n = n / 10;
+        System.out.println("Enter number: ");
+        int num = sc.nextInt();
+        int last = num % 10;
+        int first = 0;
+
+        while(num >= 10){
+            num = num / 10;
         }
-        System.out.println("Sum of digits: " + sum);
+        first = num;
+        int sum = first + last;
+        System.out.println("Sum of first and last digit: " + sum);
     }
 }

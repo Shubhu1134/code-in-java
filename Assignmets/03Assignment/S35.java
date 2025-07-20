@@ -1,14 +1,16 @@
-// Q.35: Find sum of squares of first n natural numbers
+// 35) WAP to count number of digits
+
 import java.util.Scanner;
 class Test {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter n:");
-        int n = sc.nextInt();
-        int sum = 0;
-        for(int i = 1; i <= n; i++) {
-            sum += i * i;
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+        int count = 0;
+        while (num != 0) {
+            num = num / 10;
+            count++;
         }
-        System.out.println("Sum of squares = " + sum);
+        System.out.println("Total digits: " + count);
     }
 }

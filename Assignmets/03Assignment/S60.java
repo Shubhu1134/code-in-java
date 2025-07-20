@@ -1,17 +1,15 @@
-// Q.60: Find GCD of two numbers
+// 60) WAP to print Square, Cube and Square Root of all numbers from 1 to N
+
 import java.util.Scanner;
 class Test {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter two numbers:");
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        while (a != b) {
-            if (a > b)
-                a = a - b;
-            else
-                b = b - a;
+        System.out.print("Enter N: ");
+        int n = sc.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+            double sqrt = Math.sqrt(i);
+            System.out.println("Number: " + i + ", Square: " + (i * i) + ", Cube: " + (i * i * i) + ", Square Root: " + sqrt);
         }
-        System.out.println("GCD: " + a);
     }
 }

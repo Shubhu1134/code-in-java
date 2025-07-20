@@ -1,16 +1,18 @@
+// 34) WAP to check whether entered number is perfect or not
 
-
-// Q.34: Display all even numbers between two numbers a and b
 import java.util.Scanner;
 class Test {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter start and end:");
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        for(int i = a; i <= b; i++) {
-            if(i % 2 == 0)
-                System.out.print(i + " ");
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+        int sum = 0;
+        for (int i = 1; i < num; i++) {
+            if (num % i == 0) sum += i;
         }
+        if (sum == num)
+            System.out.println("Perfect number");
+        else
+            System.out.println("Not a perfect number");
     }
 }

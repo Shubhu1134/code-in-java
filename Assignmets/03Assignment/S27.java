@@ -1,17 +1,15 @@
-// Q.27 --> Print sum of n even numbers
-
+// Q27: *, #, *, #, *, # …
 import java.util.Scanner;
 class Test {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter number of even numbers: ");
+        System.out.print("Enter number of terms: ");
         int n = sc.nextInt();
-        int sum = 0, count = 0, i = 2;
-        while (count < n) {
-            sum += i;
-            i += 2;
-            count++;
+        for(int i = 1; i <= n; i++) {
+            if(i % 2 == 0)
+                System.out.print("# ");
+            else
+                System.out.print("* ");
         }
-        System.out.println("Sum of even numbers = " + sum);
     }
 }

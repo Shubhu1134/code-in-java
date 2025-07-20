@@ -1,15 +1,12 @@
-// Q.23 --> Print 1, 4, 7, 10,...n terms (AP with d=3)
-
+// Q23: 1, 9, 25, 49, 81 ….
 import java.util.Scanner;
 class Test {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter number of terms: ");
+        System.out.print("Enter the number of terms: ");
         int n = sc.nextInt();
-        int a = 1;
-        for (int i = 1; i <= n; i++) {
-            System.out.println(a);
-            a += 3;
+        for(int i = 1; i <= n; i += 2) {
+            System.out.print((i * i) + " ");
         }
     }
 }

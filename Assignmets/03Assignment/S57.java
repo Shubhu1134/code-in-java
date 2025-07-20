@@ -1,15 +1,30 @@
-// Q.57: Print all factors of a number
+// 57) WAP to print all the prime numbers between two entered numbers
+
 import java.util.Scanner;
 class Test {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number:");
-        int n = sc.nextInt();
-        int i = 1;
-        while (i <= n) {
-            if (n % i == 0)
-                System.out.println(i);
-            i++;
+        int start, end;
+        System.out.print("Enter start number: ");
+        start = sc.nextInt();
+        System.out.print("Enter end number: ");
+        end = sc.nextInt();
+
+        for (int i = start; i <= end; i++) {
+            boolean isPrime = true;
+            if (i <= 1) {
+                isPrime = false;
+            } else {
+                for (int j = 2; j <= i / 2; j++) {
+                    if (i % j == 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+            }
+            if (isPrime) {
+                System.out.println(i + " is prime");
+            }
         }
     }
 }

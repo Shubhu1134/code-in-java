@@ -1,24 +1,14 @@
-// Q.29 --> Check if number is prime or not
-
+// Q29: 1, 11, 111, 1111 …
 import java.util.Scanner;
 class Test {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number: ");
+        System.out.print("Enter number of terms: ");
         int n = sc.nextInt();
-        boolean isPrime = true;
-        if (n <= 1) isPrime = false;
-        else {
-            for (int i = 2; i <= n / 2; i++) {
-                if (n % i == 0) {
-                    isPrime = false;
-                    break;
-                }
-            }
+        int num = 1;
+        for(int i = 1; i <= n; i++) {
+            System.out.print(num + " ");
+            num = num * 10 + 1;
         }
-        if (isPrime)
-            System.out.println(n + " is Prime");
-        else
-            System.out.println(n + " is not Prime");
     }
 }
