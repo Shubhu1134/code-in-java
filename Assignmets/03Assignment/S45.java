@@ -1,12 +1,15 @@
-// Q45: Print numbers in reverse from n to 1.
+// Q45: WAP to find out the sum of all the digits of a number
 import java.util.Scanner;
 class Test {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number: ");
+        System.out.println("Enter number: ");
         int n = sc.nextInt();
-        for (int i = n; i >= 1; i--) {
-            System.out.println(i);
+        int sum = 0;
+        while(n != 0){
+            sum += n % 10;
+            n = n / 10;
         }
+        System.out.println("Sum of digits: " + sum);
     }
 }

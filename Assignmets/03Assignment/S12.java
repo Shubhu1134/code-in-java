@@ -1,16 +1,13 @@
-// Q.12: Print even numbers from 1 to n
+// 12) WAP to print Odd numbers upto N.
+
 import java.util.Scanner;
 class Test {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter limit:");
+        System.out.print("Enter N: ");
         int n = sc.nextInt();
-        int i = 1;
-        while (i <= n) {
-            if (i % 2 == 0) {
-                System.out.println(i);
-            }
-            i++;
+        for(int i = 1; i <= n; i += 2) {
+            System.out.print(i + " ");
         }
     }
 }

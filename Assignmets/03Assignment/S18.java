@@ -1,17 +1,16 @@
-// Q.18: Print sum of odd numbers from 1 to n
+// 18) 1 2 2 4 8 32 …… n terms
+
 import java.util.Scanner;
 class Test {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter number:");
+        System.out.print("Enter n terms: ");
         int n = sc.nextInt();
-        int sum = 0, i = 1;
-        while (i <= n) {
-            if (i % 2 != 0) {
-                sum += i;
-            }
-            i++;
+        int a = 1;
+        System.out.print(a + " ");
+        for(int i = 1; i < n; i++) {
+            a = a * i;
+            System.out.print(a + " ");
         }
-        System.out.println("Sum of odd = " + sum);
     }
 }

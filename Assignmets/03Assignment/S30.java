@@ -1,20 +1,16 @@
-// Q.30 --> Check if number is palindrome
-
+// Q30: 1+11+111+1111+... up to N terms
 import java.util.Scanner;
 class Test {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number: ");
+        System.out.print("Enter number of terms: ");
         int n = sc.nextInt();
-        int original = n, reverse = 0;
-        while (n > 0) {
-            int d = n % 10;
-            reverse = reverse * 10 + d;
-            n = n / 10;
+        int num = 1;
+        int sum = 0;
+        for(int i = 1; i <= n; i++) {
+            sum += num;
+            num = num * 10 + 1;
         }
-        if (original == reverse)
-            System.out.println("Palindrome");
-        else
-            System.out.println("Not Palindrome");
+        System.out.println("Sum is: " + sum);
     }
 }

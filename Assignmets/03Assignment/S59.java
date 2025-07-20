@@ -1,14 +1,13 @@
-// Q.59: Print multiplication table of a number
-import java.util.Scanner;
+// 59) WAP to find out the sum of all integers between 100 and 200 which are divisible by 9
+
 class Test {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number:");
-        int n = sc.nextInt();
-        int i = 1;
-        while (i <= 10) {
-            System.out.println(n + " x " + i + " = " + (n * i));
-            i++;
+        int sum = 0;
+        for (int i = 100; i <= 200; i++) {
+            if (i % 9 == 0) {
+                sum += i;
+            }
         }
+        System.out.println("Sum of numbers divisible by 9 between 100 and 200 is: " + sum);
     }
 }

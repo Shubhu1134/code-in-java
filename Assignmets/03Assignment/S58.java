@@ -1,19 +1,20 @@
-// Q.58: Check whether a number is Armstrong or not (3-digit)
+// 58) WAP to convert decimal number into binary number without using array
+
 import java.util.Scanner;
 class Test {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a 3-digit number:");
-        int num = sc.nextInt();
-        int sum = 0, temp = num;
-        while (temp != 0) {
-            int rem = temp % 10;
-            sum += rem * rem * rem;
-            temp = temp / 10;
+        System.out.print("Enter decimal number: ");
+        int n = sc.nextInt();
+        int binary = 0, place = 1;
+
+        while (n > 0) {
+            int r = n % 2;
+            binary += r * place;
+            place *= 10;
+            n /= 2;
         }
-        if (sum == num)
-            System.out.println("Armstrong number");
-        else
-            System.out.println("Not Armstrong");
+
+        System.out.println("Binary: " + binary);
     }
 }
