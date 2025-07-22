@@ -6,11 +6,13 @@ class Test {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter n terms: ");
         int n = sc.nextInt();
-        int num = 1, diff = 1;
-        for(int i = 0; i < n; i++) {
-            System.out.print(num + " ");
-            diff++;
-            num += diff;
+        int a = 1, i = 1;
+
+        System.out.println(a);
+        while(i<=n){
+            a= a+i;
+            System.out.println(a);
+            i++;
         }
     }
 }
