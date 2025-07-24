@@ -5,12 +5,15 @@ class Test {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number of terms: ");
         int n = sc.nextInt();
-        int num = 1;
+        int num = 1, i=1;
         int sum = 0;
-        for(int i = 1; i <= n; i++) {
+        while(i<=n){
             sum += num;
             num = num * 10 + 1;
-        }
+      
         System.out.println("Sum is: " + sum);
+        i++;
+        }
+            
     }
 }

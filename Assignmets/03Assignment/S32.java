@@ -6,10 +6,10 @@ class Test {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number of terms: ");
         int n = sc.nextInt();
-
+        int i=1;
         char upper = 'A';
         char lower = 'b';
-        for (int i = 1; i <= n; i++) {
+        while(i <= n) {
             if (i % 2 != 0) {
                 System.out.print(upper + " ");
                 upper += 2;
@@ -17,6 +17,7 @@ class Test {
                 System.out.print(lower + " ");
                 lower += 2;
             }
+            i++;
         }
     }
 }
