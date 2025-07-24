@@ -6,8 +6,14 @@ class Test {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter N: ");
         int n = sc.nextInt();
-        for(int i = 1; i <= n; i += 2) {
-            System.out.print(i + " ");
+        int i = 1;
+        while(i<=n){
+            if (i%2==1){
+                System.out.println(i);
+            }
+            i++;
+
         }
+        
     }
 }

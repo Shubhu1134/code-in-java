@@ -1,29 +1,28 @@
-// Q.7 -- WAP to check whether entered number is prime or not.
-import java.util.Scanner;
-class Test {
-    public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("enter a number ");
-        int n = sc.nextInt();
-        int i = 2;
-        boolean isPrime = true;
+// Another way to check Prime using count of divisors
 
-        if (n <= 1) {
-            isPrime = false;
-        } else {
-            while (i <= n / 2) {
-                if (n % i == 0) {
-                    isPrime = false;
-                    break;
-                }
-                i++;
+import java.util.Scanner;
+
+public class Test {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+
+        int count = 0;
+
+        // for (int i = 1; i <= n; i++)
+        while(i<=n) {
+            if (n % i == 0) {
+                count++;
             }
+            i++;
         }
 
-        if (isPrime) {
-            System.out.println(n + " is a Prime number");
+        if (count == 2) {
+            System.out.println(n + " is a Prime number.");
         } else {
-            System.out.println(n + " is not a Prime number");
+            System.out.println(n + " is Not a Prime number.");
         }
     }
 }
