@@ -6,13 +6,17 @@ class Test {
         System.out.println("Enter start and end number: ");
         int start = sc.nextInt();
         int end = sc.nextInt();
+        int i=1, j=1;
 
-        for(int i = start; i <= end; i++){
+       while (i<=end){
             System.out.println("Table of " + i + ":");
-            for(int j = 1; j <= 10; j++){
+            while(i<=j){
                 System.out.println(i + " x " + j + " = " + (i*j));
+                j++;
             }
             System.out.println();
+
+            i++;
         }
     }
 }
