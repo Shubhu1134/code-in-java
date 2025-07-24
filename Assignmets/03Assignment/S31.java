@@ -6,10 +6,11 @@ class Test {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number of terms: ");
         int n = sc.nextInt();
-        int num = 9;
-        for (int i = 1; i <= n; i++) {
+        int num = 9 ,i=1;
+  while(i<=n) {
             System.out.print(num + " ");
             num = num * 10 + 9;
+            i++;
         }
     }
 }
