@@ -7,13 +7,16 @@ class Test {
         System.out.print("Enter n terms: ");
         int n = sc.nextInt();
         int i = -n ; 
-        System.out.println(-n);
+        System.out.println(i);
         while(i<n){
-            i= i+3;
-            System.out.println(i);
-        
-        }  
+            if (n/3==0){
+               i+= 3;
+            }else{
+                i++;
+            }
+               System.out.println(i);
+         }  
     }
 }
 
- 
+rr
