@@ -5,7 +5,9 @@
 //       *
 //         *
 
-public class Test {
+
+
+ class Test {
     public static void main(String[] args) {
         for (int i = 0; i < 5; i++) {
             // print i spaces
@@ -16,3 +18,4 @@ public class Test {
         }
     }
 }
+
