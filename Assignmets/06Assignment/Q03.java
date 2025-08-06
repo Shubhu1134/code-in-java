@@ -8,7 +8,7 @@ class Test {
         System.out.println("entre the size of the array ");
         int n = sc.nextInt();
         
-        int []arr = new int[n];
+        int []arr = new int[n];  
 
         System.out.println("enter elements :");
         for(int i =0; i<n; i++){
