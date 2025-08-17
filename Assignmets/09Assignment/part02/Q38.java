@@ -1,8 +1,11 @@
-// Q38.java
-import java.util.Scanner;
+// 38. Write a Java program to Given string Convert Lowercase to Uppercase
 
-class Q38 {
-    public static void main(String[] args) {
-        // TODO: solution for Q38
+import java.util.Scanner;
+class Test {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string in lowercase: ");
+        String str = sc.nextLine();
+        System.out.println("Uppercase String: " + str.toUpperCase());
     }
 }
