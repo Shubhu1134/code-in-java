@@ -25,4 +25,4 @@ class Q04 {
             System.out.println("Invalid range!");
         }
     }
-}
+}   
