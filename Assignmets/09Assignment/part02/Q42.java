@@ -1,8 +1,16 @@
-// Q42.java
+// 42. Write a program to Replace string with another string in java using String.replace() method
 import java.util.Scanner;
-
-class Q42 {
+class Test {
     public static void main(String[] args) {
-        // TODO: solution for Q42
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter original string: ");
+        String str = sc.nextLine();
+        System.out.println("Enter word to replace: ");
+        String oldWord = sc.nextLine();
+        System.out.println("Enter new word: ");
+        String newWord = sc.nextLine();
+
+        String replaced = str.replace(oldWord, newWord);
+        System.out.println("After replacement: " + replaced);
     }
 }

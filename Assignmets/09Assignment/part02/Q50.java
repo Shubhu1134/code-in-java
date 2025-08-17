@@ -1,8 +1,19 @@
-// Q50.java
+// 50. Write a program to separate all tokens (words) using StringTokenizer
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
-class Q50 {
+class Test {
     public static void main(String[] args) {
-        // TODO: solution for Q50
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a sentence:");
+        String str = sc.nextLine();
+
+        StringTokenizer st = new StringTokenizer(str, " ");
+
+        System.out.println("Tokens are:");
+        while (st.hasMoreTokens()) {
+            System.out.println(st.nextToken());
+        }
     }
 }
