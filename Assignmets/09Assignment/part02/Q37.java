@@ -1,8 +1,12 @@
-// Q37.java
-import java.util.Scanner;
+// 37. Write a Java program to check if the letter 'x' is present in the word 'String Exercises'
 
-class Q37 {
-    public static void main(String[] args) {
-        // TODO: solution for Q37
+class Test {
+    public static void main(String args[]) {
+        String str = "String Exercises";
+        if(str.contains("x")){
+            System.out.println("'x' is present");
+        } else {
+            System.out.println("'x' is not present");
+        }
     }
 }
