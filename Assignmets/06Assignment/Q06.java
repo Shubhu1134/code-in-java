@@ -50,17 +50,17 @@
 //             arr[i] = sc.nextInt();
 //         }
 
-//         int low = 0, mid = 0, high = n - 1;
+//         int low = 0, initial= 0, ending = n - 1;
 
-//         while (mid <= high) {
-//             if (arr[mid] == 0) {
+//         while (initial<= ending) {
+//             if (arr[initial] == 0) {
 //                 int temp = arr[low];
 //                 arr[low] = arr[mid];
-//                 arr[mid] = temp;
+//                 arr[initial] = temp;
 //                 low++;
-//                 mid++;
-//             } else if (arr[mid] == 1) {
-//                 mid++;
+//                 initial++;
+//             } else if (arr[initial] == 1) {
+//                 initial++;
 //             } else {
 //                 int temp = arr[mid];
 //                 arr[mid] = arr[high];
