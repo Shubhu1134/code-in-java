@@ -19,7 +19,7 @@ class Q01 {
         }
         for (int i = 0; i < s2.length(); i++) {
             result = result + s2.charAt(i);
-        }
+        } 
 
         System.out.println("Concatenated String: " + result);
     }

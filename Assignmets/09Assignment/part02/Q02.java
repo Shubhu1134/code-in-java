@@ -18,5 +18,5 @@ class Q02 {
         } else {
             System.out.println("Invalid index!");
         }
-    }
+    } 
 }
