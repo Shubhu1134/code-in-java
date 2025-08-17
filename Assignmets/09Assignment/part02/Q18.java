@@ -1,8 +1,14 @@
-// Q18.java
+// 18. Write a java program to get the length of a given string
 import java.util.Scanner;
 
-class Q18 {
+class Test {
     public static void main(String[] args) {
-        // TODO: solution for Q18
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        int length = 0;
+        for (char c : str.toCharArray()) {
+            length++;
+        }
+        System.out.println(length);
     }
 }

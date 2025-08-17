@@ -1,8 +1,19 @@
-// Q16.java
+// 16. Write a Java program to convert all the characters in a string to Lowercase
 import java.util.Scanner;
 
-class Q16 {
+class Test {
     public static void main(String[] args) {
-        // TODO: solution for Q16
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        String result = "";
+        for (int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
+            if (c >= 'A' && c <= 'Z') {
+                result += (char)(c + 32);
+            } else {
+                result += c;
+            }
+        }
+        System.out.println(result);
     }
 }
