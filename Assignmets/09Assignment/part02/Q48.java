@@ -1,8 +1,17 @@
-// Q48.java
+// 48. Write a program to String concatenation with primitive data type values
 import java.util.Scanner;
 
-class Q48 {
+class Test {
     public static void main(String[] args) {
-        // TODO: solution for Q48
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter an integer:");
+        int a = sc.nextInt();
+
+        System.out.println("Enter a double:");
+        double b = sc.nextDouble();
+
+        String str = "Value of int: " + a + " and double: " + b;
+        System.out.println(str);
     }
 }
