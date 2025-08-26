@@ -54,7 +54,7 @@ DISADVANTAGES OF OOP:
 5. Learning curve is steeper
 */
 
-public class Question1_OOP_Theory {
+ class Question1_OOP_Theory {
     public static void main(String[] args) {
         System.out.println("=== OBJECT-ORIENTED PROGRAMMING CONCEPTS ===");
         System.out.println();
