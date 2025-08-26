@@ -1,0 +1,1 @@
+✅ Yes, methods with var-args can be overloaded, but overloading with ambiguity should be avoided.
